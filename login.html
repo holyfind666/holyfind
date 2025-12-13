@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - HOLY FIND</title>
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link rel="stylesheet" href="web/css/auth.css" />
+    <script src="web/js/validation_auth.js" defer></script>
+
+</head>
+
+<body class="registration-page">
+<header>
+    <nav class="menu" aria-label="Основная навигация">
+        <a href="index.html" class="logo">
+            <div class="logo-h"><img src="web/img/logo.png" alt="H" /></div>
+            <p class="logo-text">oly find</p>
+        </a>
+
+        <!-- Чекбокс для управления меню -->
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        
+        <!-- Иконка бургера справа -->
+        <div class="burger-toggle-container">
+            <label for="burger-toggle" class="burger-icon" aria-label="Открыть меню">
+                <!-- ВСТАВЬТЕ СВОЕ ИЗОБРАЖЕНИЕ БУРГЕРА ЗДЕСЬ -->
+                <img src="web/img/photoburger.png" alt="Меню" class="burger-icon-img">
+            </label>
+        </div>
+
+        <!-- Основное меню для десктопа -->
+        <ul class="nav-list">
+            <li><a href="index.html" class="glav">Главная</a></li>
+            <li><a href="collections.html" class="glav">Коллекции</a></li>
+            <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+            <li><a href="about.html" class="glav">О нас</a></li>
+        </ul>
+
+        <a href="/login.html" class="login-link">
+            <button class="login-button" label="Войти в аккаунт">ВОЙТИ</button>
+        </a>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <!-- <label for="burger-toggle" class="menu-close-btn" aria-label="Закрыть меню">
+                <img src="web/img/photoburger.png" alt="Закрыть" class="menu-close-img">
+            </label> -->
+            
+            <ul class="mobile-menu-list">
+                <li><a href="index.html" class="glav">Главная</a></li>
+                <li><a href="collections.html" class="glav">Коллекции</a></li>
+                <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+                <li><a href="about.html" class="glav">О нас</a></li>
+            </ul>
+            
+            <a href="/login.html" class="mobile-login-link">
+                <button class="mobile-login-button">ВОЙТИ</button>
+            </a>
+        </div>
+    </nav>
+</header>
+    <main>
+        <form class="login-form"  method="get">
+            <h1>Вход в аккаунт</h1>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" maxlength="50" minlength="11" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" placeholder="Пароль" id="password" maxlength="25" minlength="6" required>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember" class="remember-checkbox" />
+                <label for="remember" class="remember-label">Запомнить меня</label>
+            </div>
+            
+                <button type="submit" class="login-buttonn">Войти</button>
+
+
+            <div class="login-link">
+                <span class="login-link-text">Нет аккаунта?</span>
+                <a href="register.html">Зарегистрируйтесь</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">© 2025 HOLY FIND. Все права защищены.</p>
+            <div class="footer-line"></div>
+            <a href="mailto:supportholyfind.mail.ru" class="footer-email">supportholyfind.mail.ru</a>
+        </div>
+    </footer>
+</body>
+
+</html>

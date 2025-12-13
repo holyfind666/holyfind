@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Коллекции - HOLY FIND</title>
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link rel="stylesheet" href="web/css/designers.css" />
+</head>
+
+<body>
+<header>
+    <nav class="menu" aria-label="Основная навигация">
+        <a href="index.html" class="logo">
+            <div class="logo-h"><img src="web/img/logo.png" alt="H" /></div>
+            <p class="logo-text">oly find</p>
+        </a>
+
+        <!-- Чекбокс для управления меню -->
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        
+        <!-- Иконка бургера справа -->
+        <div class="burger-toggle-container">
+            <label for="burger-toggle" class="burger-icon" aria-label="Открыть меню">
+                <!-- ВСТАВЬТЕ СВОЕ ИЗОБРАЖЕНИЕ БУРГЕРА ЗДЕСЬ -->
+                <img src="web/img/photoburger.png" alt="Меню" class="burger-icon-img">
+            </label>
+        </div>
+
+        <!-- Основное меню для десктопа -->
+        <ul class="nav-list">
+            <li><a href="index.html" class="glav">Главная</a></li>
+            <li><a href="collections.html" class="glav">Коллекции</a></li>
+            <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+            <li><a href="about.html" class="glav">О нас</a></li>
+        </ul>
+
+        <a href="/login.html" class="login-link">
+            <button class="login-button" label="Войти в аккаунт">ВОЙТИ</button>
+        </a>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <!-- <label for="burger-toggle" class="menu-close-btn" aria-label="Закрыть меню">
+                <img src="web/img/photoburger.png" alt="Закрыть" class="menu-close-img">
+            </label> -->
+            
+            <ul class="mobile-menu-list">
+                <li><a href="index.html" class="glav">Главная</a></li>
+                <li><a href="collections.html" class="glav">Коллекции</a></li>
+                <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+                <li><a href="about.html" class="glav">О нас</a></li>
+            </ul>
+            
+            <a href="/login.html" class="mobile-login-link">
+                <button class="mobile-login-button">ВОЙТИ</button>
+            </a>
+        </div>
+    </nav>
+</header>
+
+    <main>
+       
+        <section class="designers-page" aria-labelledby="designers-heading">
+             <div class="section-header">
+            <h1 class="designers-heading">Дизайнеры</h1>
+            <div class="underline-col"></div>
+        </div>
+            <div class="designers-grid-page">
+
+                <article class="designers-card">
+                    <div class="card-image">
+                        <img src="web/img/rickowens.png" alt="rickowens" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h2>Рик Овенс</h2>
+                            <p>Rick Owens</p>
+                        </div>
+                        <a href="/rick.html" class="login-link">
+                            <button class="login-button" aria-label="rickowens">ПОДРОБНЕЕ</button>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="designers-card">
+                    <div class="card-image">
+                        <img src="web/img/issey.png" alt="issey" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h2>Иссэй Миякэ</h2>
+                            <p>Issey Miyake</p>
+                        </div>
+                        <a href="/issey.html" class="login-link">
+                            <button class="login-button" aria-label="issey">ПОДРОБНЕЕ</button>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="designers-card">
+                    <div class="card-image">
+                        <img src="web/img/comme.png" alt="Монохромная коллекция - контрастное черно-белое платье" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h2>Рей Кавакубо</h2>
+                            <p>Comme des Garçons</p>
+                        </div>
+                        <a href="/comme.html" class="login-link">
+                            <button class="login-button" aria-label="comme">ПОДРОБНЕЕ</button>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="designers-card">
+                    <div class="card-image">
+                        <img src="web/img/julius.png" alt="julius" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h2>Тацуро Хорикава</h2>
+                            <p>Julius</p>
+                        </div>
+                        <a href="/julius.html" class="login-link">
+                            <button class="login-button" aria-label="julius">ПОДРОБНЕЕ</button>
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="designers-card">
+                    <div class="card-image">
+                        <img src="web/img/blns.png" alt="blns" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h2>Демна Гвасалия</h2>
+                            <p>BALENCIAGA</p>
+                        </div>
+                        <a href="/blns.html" class="login-link">
+                            <button class="login-button" aria-label="blns">ПОДРОБНЕЕ</button>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="designers-card">
+                    <div class="card-image">
+                        <img src="web/img/dirk.png" alt="dirk" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h2>Дирк Биккембергс</h2>
+                            <p>Dirk bikkembergs </p>
+                        </div>
+                        <a href="/dirk.html" class="login-link">
+                            <button class="login-button" aria-label="dirk">ПОДРОБНЕЕ</button>
+                        </a>
+                    </div>
+                </article>
+                <article class="designers-card">
+                    <div class="card-image">
+                        <img src="web/img/iris.png" alt="iris" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h2>Ирис ван Херпен</h2>
+                            <p>IRIS VAN HERPEN</p>
+                        </div>
+                        <a href="/iris.html" class="login-link">
+                            <button class="login-button" aria-label="iris">ПОДРОБНЕЕ</button>
+                        </a>
+                    </div>
+                </article>
+                <article class="designers-card">
+                    <div class="card-image">
+                        <img src="web/img/yy3.png" alt="y3" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h2>Ёдзи Ямамото</h2>
+                            <p>Yohji Yamamoto</p>
+                        </div>
+                        <a href="/y3.html" class="login-link">
+                            <button class="login-button" aria-label="y3">ПОДРОБНЕЕ</button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">© 2025 HOLY FIND. Все права защищены.</p>
+            <div class="footer-line"></div>
+            <a href="mailto:supportholyfind.mail.ru" class="footer-email">supportholyfind.mail.ru</a>
+        </div>
+    </footer>
+</body>
+
+</html>

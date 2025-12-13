@@ -1,0 +1,191 @@
+.designers-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-family: 'delagothicone';
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.designers-page {
+    min-width:  100px;
+    max-width: calc(100vw - 200px);
+    margin: 0 100px;
+    padding: 40px 0;
+}
+
+.designers-grid-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    align-items: start;
+    justify-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.section-header{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.designers-card {
+    margin-top: 15px;
+    max-width: 300px;
+    height: 380px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #FFFFFF; 
+}
+
+.designers-card .card-image {
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+}
+
+.designers-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+    display: block; 
+}
+
+.designers-card .card-info {
+    width: 100%;
+    height: 35%;
+    background: #FFFFFF;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.designers-card .card-text h2 {
+    font-family: 'delagothicone';
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #000;
+    line-height: 1.3;
+}
+
+.designers-card .card-text p {
+    font-family: 'crimsonpro';
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.designers-card .login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.designers-card .login-button {
+    width: 100%;
+    height: 50px;
+    padding: 8px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'delagothicone';
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.designers-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.designers-card:hover .card-image img {
+    transform: scale(1.05);
+}
+@media (max-width: 1200px) {
+    .designers-page {
+        max-width: calc(100vw - 100px);
+        margin: 0 50px;
+    }
+    
+    .designers-grid-page {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .designers-page {
+        max-width: calc(100vw - 60px);
+        margin: 0 30px;
+        padding: 20px 0;
+    }
+    
+    .designers-grid-page {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 15px;
+    }
+    
+    .designers-heading {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    
+    .designers-card {
+        height: 360px;
+        max-width: 100%;
+    }
+    
+    .designers-card .card-info {
+        padding: 12px 15px;
+    }
+}
+@media (max-width: 480px) {
+    .designers-page {
+        max-width: calc(100vw - 40px);
+        margin: 0 20px;
+        padding: 15px 0;
+    }
+    
+    .designers-grid-page {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        justify-items: stretch;
+    }
+    
+    .designers-card {
+        max-width: 100%;
+        height: 350px;
+        margin-top: 10px;
+    }
+    
+    .designers-heading {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    
+    .designers-card .card-text h3 {
+        font-size: 15px;
+    }
+    
+    .designers-card .card-text p {
+        font-size: 15px;
+    }
+    
+    .designers-card .login-button {
+        height: 45px;
+        font-size: 13px;
+    }
+}

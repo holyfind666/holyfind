@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOLY FIND - Авангардная мода</title>
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link rel="stylesheet" href="web/css/index.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="menu" aria-label="Основная навигация">
+            <a href="index.html" class="logo">
+                <div class="logo-h"><img src="web/img/logo.png" alt="H" /></div>
+                <p class="logo-text">oly find</p>
+            </a>
+
+            <!-- Чекбокс для управления меню -->
+            <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+            
+            <!-- Иконка бургера справа -->
+            <div class="burger-toggle-container">
+                <label for="burger-toggle" class="burger-icon" aria-label="Открыть меню">
+                    <img src="web/img/photoburger.png" alt="Меню" class="burger-icon-img">
+                </label>
+            </div>
+
+            <!-- Основное меню для десктопа -->
+            <ul class="nav-list">
+                <li><a href="index.html" class="glav">Главная</a></li>
+                <li><a href="collections.html" class="glav">Коллекции</a></li>
+                <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+                <li><a href="about.html" class="glav">О нас</a></li>
+            </ul>
+
+            <!-- Контейнер для профиля и кнопки выхода (десктоп) -->
+            <div class="profile-auth-container">
+                <a href="/profile.html" class="profile-link">
+                    <img src="web/img/avatar.png" alt="Аватар пользователя" width="50" height="50">
+                </a>
+                <a href="/index.html" class="logout-link">
+                    <button class="logout-button" aria-label="Выйти из аккаунта">ВЫЙТИ</button>
+                </a>
+            </div>
+
+            <!-- Мобильное меню -->
+            <div class="mobile-menu">
+                <!-- Оверлей для закрытия -->
+                <!-- <label for="burger-toggle" class="mobile-menu-overlay"></label> -->
+                
+                <ul class="mobile-menu-list">
+                    <li><a href="index.html" class="glav" onclick="closeMobileMenu()">Главная</a></li>
+                    <li><a href="collections.html" class="glav" onclick="closeMobileMenu()">Коллекции</a></li>
+                    <li><a href="designers.html" class="glav" onclick="closeMobileMenu()">Дизайнеры</a></li>
+                    <li><a href="about.html" class="glav" onclick="closeMobileMenu()">О нас</a></li>
+                </ul>
+                
+                <!-- Профиль в мобильном меню -->
+                <div class="profile-auth-container">
+                    <a href="/profile.html" class="profile-link" onclick="closeMobileMenu()">
+                        <img src="web/img/avatar.png" alt="Аватар пользователя">
+                    </a>
+                    <a href="/index.html" class="mobile-logout-link" onclick="closeMobileMenu()">
+                        <button class="logout-button">ВЫЙТИ</button>
+                    </a>
+                </div>
+                
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-image">
+                <img src="/web/img/pon2.png" alt="Авангардная мода" class="imgnew">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-heading">Откройте мир авангардной моды</h1>
+                        <p class="hero-description">
+                            Исследуйте концептуальные дизайны и находите вдохновение в работах<br>
+                            ведущих дизайнеров современности
+                        </p>
+                        <a href="collections.html" class="cta-button">
+                            <button class="cta-button">НАЧАТЬ ПРОСМОТР</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="collections-section" aria-labelledby="popular-works">
+            <div class="section-header">
+                <h2 class="popular-works">Популярные работы</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="collections-grid">
+                <article class="collection-card">
+                    <div class="card-image">
+                        <img src="web/img/col1.jpg" alt="Деструктивный силуэт - асимметричное черное платье с драпировкой" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3>ДЕСТРУКТИВНЫЙ СИЛУЭТ</h3>
+                            <p>Коллекция "Разрушение форм", 2023</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="burger-menu" aria-label="Открыть меню коллекции">
+                                <img src="/web/img/burger.svg" alt="burger" class="burger">
+                            </button>
+                            <label class="photo-switch">
+                                <input type="checkbox" class="photo-checkbox">
+                                <span class="photo-visual"></span>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <div class="card-image">
+                        <img src="web/img/col2.jpg" alt="Архитектурный крой - белое платье с геометрическими формами" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3>АРХИТЕКТУРНЫЙ КРОЙ</h3>
+                            <p>Экспериментальные формы, 2023</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="burger-menu" aria-label="Открыть меню коллекции">
+                                <img src="/web/img/burger.svg" alt="burger" class="burger">
+                            </button>
+                            <label class="photo-switch">
+                                <input type="checkbox" class="photo-checkbox">
+                                <span class="photo-visual"></span>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <div class="card-image">
+                        <img src="web/img/col3.jpg" alt="Монохромная коллекция - контрастное черно-белое платье" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3>МОНОХРОМНАЯ КОЛЛЕКЦИЯ</h3>
+                            <p>Коллекция "Черное и белое", 2023</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="burger-menu" aria-label="Открыть меню коллекции">
+                                <img src="/web/img/burger.svg" alt="burger" class="burger">
+                            </button>
+                            <label class="photo-switch">
+                                <input type="checkbox" class="photo-checkbox">
+                                <span class="photo-visual"></span>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">© 2025 HOLY FIND. Все права защищены.</p>
+            <div class="footer-line"></div>
+            <a href="mailto:supportholyfind.mail.ru" class="footer-email">supportholyfind.mail.ru</a>
+        </div>
+    </footer>
+
+    <script>
+        // Функция для закрытия мобильного меню
+        function closeMobileMenu() {
+            document.getElementById('burger-toggle').checked = false;
+        }
+        
+        // Закрытие меню при клике на оверлей
+        document.querySelectorAll('.mobile-menu-overlay').forEach(overlay => {
+            overlay.addEventListener('click', closeMobileMenu);
+        });
+    </script>
+</body>
+
+</html>

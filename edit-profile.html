@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Редактировать профиль - HOLY FIND</title>
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link rel="stylesheet" href="web/css/profile.css" />
+    <link rel="stylesheet" href="web/css/edit-profile.css" />
+</head>
+
+<body>
+<header>
+    <nav class="menu" aria-label="Основная навигация">
+        <a href="index.html" class="logo">
+            <div class="logo-h"><img src="web/img/logo.png" alt="H" /></div>
+            <p class="logo-text">oly find</p>
+        </a>
+
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        
+        <div class="burger-toggle-container">
+            <label for="burger-toggle" class="burger-icon" aria-label="Открыть меню">
+                <img src="web/img/photoburger.png" alt="Меню" class="burger-icon-img">
+            </label>
+        </div>
+
+        <ul class="nav-list">
+            <li><a href="index.html" class="glav">Главная</a></li>
+            <li><a href="collections.html" class="glav">Коллекции</a></li>
+            <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+            <li><a href="about.html" class="glav">О нас</a></li>
+        </ul>
+
+        <div class="profile-auth-container">
+            <a href="/profile.html" class="profile-link">
+                <img src="web/img/avatar.png" alt="Аватар пользователя" width="50" height="50">
+            </a>
+            <a href="/index.html" class="logout-link">
+                <button class="logout-button" aria-label="Выйти из аккаунта">ВЫЙТИ</button>
+            </a>
+        </div>
+
+        <div class="mobile-menu">
+            <ul class="mobile-menu-list">
+                <li><a href="index.html" class="glav">Главная</a></li>
+                <li><a href="collections.html" class="glav">Коллекции</a></li>
+                <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+                <li><a href="about.html" class="glav">О нас</a></li>
+            </ul>
+            
+            <div class="profile-auth-container-mobile">
+                <a href="/profile.html" class="profile-link-mobile">
+                    <img src="web/img/avatar.png" alt="Аватар пользователя" class="profile-avatar-mobile">
+                </a>
+                <a href="/index.html" class="logout-link-mobile">
+                    <button class="logout-button-mobile">ВЫЙТИ</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main class="edit-profile-page">
+        <!-- для изменения аватарки -->
+        <div class="edit-popup-card" id="avatarPopup" style="display: none;">
+            <a href="#" class="close-button" aria-label="Закрыть">
+                <img src="/web/img/close.png" alt="Закрыть">
+            </a>
+            
+            <div class="edit-popup-card__content">
+                <h3 class="popup-title">Изменить аватар</h3>
+                
+                <div class="avatar-preview-container">
+                    <div class="avatar-preview">
+                        <img src="web/img/avatar.png" alt="Текущий аватар" id="avatarPreview">
+                    </div>
+                </div>
+                
+                <div class="avatar-upload-section">
+                    <button class="upload-button" id="uploadAvatarBtn">
+                        <span>Выбрать фото</span>
+                    </button>
+                    <p class="upload-hint">PNG, JPG, GIF до 5MB</p>
+                </div>
+                
+                <div class="popup-buttons">
+                    <button class="popup-button save-button" id="saveAvatarBtn">
+                        Сохранить
+                    </button>
+                    <button class="popup-button cancel-button" id="cancelAvatarBtn">
+                        Отмена
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- для изменения пароля -->
+        <div class="edit-popup-card" id="passwordPopup" style="display: none;">
+            <a href="#" class="close-button" aria-label="Закрыть">
+                <img src="/web/img/close.png" alt="Закрыть">
+            </a>
+            
+            <div class="edit-popup-card__content">
+                <h3 class="popup-title">Изменить пароль</h3>
+                
+                <div class="password-form">
+                    <div class="form-group">
+                        <label class="form-label">Новый пароль</label>
+                        <div class="password-input-wrapper">
+                            <input type="password" class="form-input" id="newPassword" placeholder="Введите новый пароль" value="">
+                        </div>
+                        <div class="error-message" id="newPasswordError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Подтвердите пароль</label>
+                        <div class="password-input-wrapper">
+                            <input type="password" class="form-input" id="confirmPassword" placeholder="Подтвердите пароль" value="">
+                        </div>
+                        <div class="error-message" id="confirmPasswordError"></div>
+                    </div>
+                </div>
+                
+                <div class="popup-buttons">
+                    <button class="popup-button save-button" id="savePasswordBtn">
+                        Изменить пароль
+                    </button>
+                    <button class="popup-button cancel-button" id="cancelPasswordBtn">
+                        Отмена
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Основная карточка редактирования -->
+        <div class="edit-profile-card" id="mainCard" style="display: none;">
+            <a href="profile.html" class="close-button" aria-label="Закрыть">
+                <img src="/web/img/close.png" alt="Закрыть">
+            </a>
+            
+            <div class="edit-profile-card__content">
+                <!-- Аватар -->
+                <div class="avatar-section">
+                    <div class="avatar-container">
+                        <img src="web/img/avatar.png" alt="Аватар пользователя" class="edit-profile-avatar" id="mainAvatar">
+                    </div>
+                    <!-- Кнопка под аватаркой -->
+                    <div class="avatar-button-container">
+                        <button class="avatar-button" id="changeAvatarBtn">
+                            Добавить фото
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Почта и пароль -->
+                <div class="profile-info-section">
+                    <div class="info-item">
+                        <label class="info-label">Почта</label>
+                        <p class="info-value" id="userEmail">supportholyfind.mail.ru</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <label class="info-label">Ваш пароль</label>
+                        <p class="info-value password-value" id="userPassword">********</p>
+                    </div>
+                </div>
+                
+                <!-- Кнопка изменить пароль -->
+                <div class="password-button-container">
+                    <button class="password-button" id="changePasswordBtn">
+                        Изменить пароль
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">© 2025 HOLY FIND. Все права защищены.</p>
+            <div class="footer-line"></div>
+            <a href="mailto:supportholyfind.mail.ru" class="footer-email">supportholyfind.mail.ru</a>
+        </div>
+    </footer>
+
+    <script>
+        // Минимальный скрипт для управления видимостью карточек
+        document.addEventListener('DOMContentLoaded', function() {
+            // Получаем параметры из URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const popupType = urlParams.get('popup');
+            
+            // Показываем нужную карточку в зависимости от параметра
+            const avatarPopup = document.getElementById('avatarPopup');
+            const passwordPopup = document.getElementById('passwordPopup');
+            const mainCard = document.getElementById('mainCard');
+            
+            if (popupType === 'avatar') {
+                avatarPopup.style.display = 'block';
+                passwordPopup.style.display = 'none';
+                mainCard.style.display = 'none';
+            } else if (popupType === 'password') {
+                avatarPopup.style.display = 'none';
+                passwordPopup.style.display = 'block';
+                mainCard.style.display = 'none';
+            } else {
+                // Если нет параметров, показываем основную карточку
+                avatarPopup.style.display = 'none';
+                passwordPopup.style.display = 'none';
+                mainCard.style.display = 'block';
+            }
+        });
+    </script>
+    
+    <!-- Подключаем основной скрипт для редактирования профиля -->
+    <script src="web/js/edit-profile.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Коллекции - HOLY FIND</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link rel="stylesheet" href="web/css/rickcol.css" />
+</head>
+
+<body class="page-collection">
+<header>
+    <nav class="menu" aria-label="Основная навигация">
+        <a href="index.html" class="logo">
+            <div class="logo-h"><img src="web/img/logo.png" alt="H" /></div>
+            <p class="logo-text">oly find</p>
+        </a>
+
+        <!-- Чекбокс для управления меню -->
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        
+        <!-- Иконка бургера справа -->
+        <div class="burger-toggle-container">
+            <label for="burger-toggle" class="burger-icon" aria-label="Открыть меню">
+                <!-- ВСТАВЬТЕ СВОЕ ИЗОБРАЖЕНИЕ БУРГЕРА ЗДЕСЬ -->
+                <img src="web/img/photoburger.png" alt="Меню" class="burger-icon-img">
+            </label>
+        </div>
+
+        <!-- Основное меню для десктопа -->
+        <ul class="nav-list">
+            <li><a href="index.html" class="glav">Главная</a></li>
+            <li><a href="collections.html" class="glav">Коллекции</a></li>
+            <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+            <li><a href="about.html" class="glav">О нас</a></li>
+        </ul>
+
+        <a href="/login.html" class="login-link">
+            <button class="login-button" label="Войти в аккаунт">ВОЙТИ</button>
+        </a>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <!-- <label for="burger-toggle" class="menu-close-btn" aria-label="Закрыть меню">
+                <img src="web/img/photoburger.png" alt="Закрыть" class="menu-close-img">
+            </label> -->
+            
+            <ul class="mobile-menu-list">
+                <li><a href="index.html" class="glav">Главная</a></li>
+                <li><a href="collections.html" class="glav">Коллекции</a></li>
+                <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+                <li><a href="about.html" class="glav">О нас</a></li>
+            </ul>
+            
+            <a href="/login.html" class="mobile-login-link">
+                <button class="mobile-login-button">ВОЙТИ</button>
+            </a>
+        </div>
+    </nav>
+</header>
+
+    <main class="main">
+        <div class="container">
+            <div class="collection-header">
+                <div class="collection-header__title-wrapper">
+                    <h1 class="collection-header__title">
+                        RICK OWENS ОСЕНЬ-ЗИМА 2025 ПАРИЖ (MENSWEAR)
+                    </h1>
+                </div>
+                
+                <h2 class="collection-header__subtitle">Апокалиптическая элегантность Rick Owens</h2>
+                
+                <div class="collection-content">
+                    <span class="collection-content__description">
+                        Показ Rick Owens осень-зима 2025 представил футуристические силуэты в монохромной палитре. 
+                        Коллекция трансформирует базовые вещи, такие как куртки и блейзеры с острыми плечами, 
+                        в объекты желания, подчеркивая роскошь через совершенство необходимого.
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Блок collection-carousel -->
+            <div class="collection-carousel">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="collection-header__subtitle">
+                            Rick Owens показ коллекции осень-зима 2025: Фотографии
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div id="collectionCarousel" class="carousel slide collection-carousel__inner" data-bs-ride="carousel">
+                            <div class="carousel-inner collection-carousel__inner-content">
+                                <div class="carousel-item active collection-carousel__item" data-bs-interval="3000">
+                                    <img src="web/img/photorick.png" class="d-block w-100 collection-carousel__img" alt="Rick Owens коллекция осень-зима 2025 - фото 1">
+                                </div>
+                                <div class="carousel-item collection-carousel__item" data-bs-interval="3000">
+                                    <img src="web/img/photocol2.png" class="d-block w-100 collection-carousel__img" alt="Rick Owens коллекция осень-зима 2025 - фото 2">
+                                </div>
+                                <div class="carousel-item collection-carousel__item" data-bs-interval="3000">
+                                    <img src="web/img/photocol3.png" class="d-block w-100 collection-carousel__img" alt="Rick Owens коллекция осень-зима 2025 - фото 3">
+                                </div>
+                                <div class="carousel-item collection-carousel__item" data-bs-interval="3000">
+                                    <img src="web/img/photocol4.png" class="d-block w-100 collection-carousel__img" alt="Rick Owens коллекция осень-зима 2025 - фото 4">
+                                </div>
+                                <div class="carousel-item collection-carousel__item" data-bs-interval="3000">
+                                    <img src="web/img/photocol5.png" class="d-block w-100 collection-carousel__img" alt="Rick Owens коллекция осень-зима 2025 - фото 5">
+                                </div>
+                                <div class="carousel-item collection-carousel__item" data-bs-interval="3000">
+                                    <img src="web/img/photocol6.png" class="d-block w-100 collection-carousel__img" alt="Rick Owens коллекция осень-зима 2025 - фото 6">
+                                </div>
+                            </div>
+                            <!-- Кастомные стрелки -->
+                            <button class="carousel-control-prev collection-carousel__control-prev" type="button" data-bs-target="#collectionCarousel" data-bs-slide="prev">
+                                <img src="web/img/strlev.png" class="collection-carousel__control-icon" alt="Предыдущий слайд">
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next collection-carousel__control-next" type="button" data-bs-target="#collectionCarousel" data-bs-slide="next">
+                                <img src="web/img/strprav.png" class="collection-carousel__control-icon" alt="Следующий слайд">
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">© 2025 HOLY FIND. Все права защищены.</p>
+            <div class="footer-line"></div>
+            <a href="mailto:supportholyfind.mail.ru" class="footer-email">supportholyfind.mail.ru</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

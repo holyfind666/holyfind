@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рик Оуэнс - HOLY FIND</title>
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link rel="stylesheet" href="web/css/rick.css" />
+</head>
+
+<body>
+<header>
+    <nav class="menu" aria-label="Основная навигация">
+        <a href="index.html" class="logo">
+            <div class="logo-h"><img src="web/img/logo.png" alt="H" /></div>
+            <p class="logo-text">oly find</p>
+        </a>
+
+        <!-- Чекбокс для управления меню -->
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        
+        <!-- Иконка бургера справа -->
+        <div class="burger-toggle-container">
+            <label for="burger-toggle" class="burger-icon" aria-label="Открыть меню">
+                <img src="web/img/photoburger.png" alt="Меню" class="burger-icon-img">
+            </label>
+        </div>
+
+        <!-- Основное меню для десктопа -->
+        <ul class="nav-list">
+            <li><a href="index.html" class="glav">Главная</a></li>
+            <li><a href="collections.html" class="glav">Коллекции</a></li>
+            <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+            <li><a href="about.html" class="glav">О нас</a></li>
+        </ul>
+
+        <a href="/login.html" class="login-link">
+            <button class="login-button" label="Войти в аккаунт">ВОЙТИ</button>
+        </a>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <!-- <label for="burger-toggle" class="menu-close-btn" aria-label="Закрыть меню">
+                <img src="web/img/photoburger.png" alt="Закрыть" class="menu-close-img">
+            </label> -->
+            
+            <ul class="mobile-menu-list">
+                <li><a href="index.html" class="glav">Главная</a></li>
+                <li><a href="collections.html" class="glav">Коллекции</a></li>
+                <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+                <li><a href="about.html" class="glav">О нас</a></li>
+            </ul>
+            
+            <a href="/login.html" class="mobile-login-link">
+                <button class="mobile-login-button">ВОЙТИ</button>
+            </a>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <section class="designer-page" aria-labelledby="designer-heading">
+            <div class="designer-hero">
+                <div class="designer-card-container">
+                    <div class="designer-card">
+                        <div class="designer-image">
+                            <img src="/web/img/rickowens.png" alt="Рик Оуэнс" />
+                        </div>
+                        <div class="designer-info">
+                            <div class="designer-text">
+                                <h3 class="designer-name-ru">Рик Оуэнс</h3>
+                                <div class="designer-divider"></div>
+                                <h4 class="designer-name-en">Rick Owens</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="designer-bio">
+                    <h2 id="designer-heading" class="designer-heading">Биография</h2>
+                    <div class="underline"></div>
+                    <p class="bio-text">
+                        Рик Оуэнс — американский дизайнер, известный своим мрачным, готическим стилем, родился в 1962 году в Калифорнии.
+                        Обучался живописи, затем поступил на курсы по раскрою одежды, после чего начал создавать копии дизайнерской
+                        одежды. В 1994 году запустил собственный бренд Rick Owens, получивший международное признание благодаря
+                        поддержке Анны Винтур. Рик Оуэнс также разрабатывал дизайн мебели, одежды и обуви, сотрудничал с известными
+                        брендами и получил несколько престижных наград.
+                    </p>
+                </div>
+            </div>
+
+            <div class="career-section">
+                <div class="section-header">
+                    <h2 class="collections-heading">Начало карьеры</h2>
+                    <div class="underline"></div>
+                </div>
+                <p class="career-text">
+                    В начале карьеры Рик Оуэнс работал закройщиком, где выработал свой уникальный стиль, заработав репутацию смелого
+                    новатора. В 1994 году он основал собственную компанию, а после переезда в Италию в 2001 году обрел мировую
+                    известность благодаря своей кожаной куртке, созданной для Кейт Мосс.
+                </p>
+                
+                <div class="kate-moss-section">
+                    <div class="kate-image-container">
+                        <img src="/web/img/kate.png" alt="Кейт Мосс в кожаной куртке от Рика Оуэнса" class="kate-image" />
+                    </div>
+                    <p class="image-caption">Модель Кейт Мосс в кожаной куртке от Рика Оуэнса</p>
+                </div>
+                
+                <p class="career-text">
+                    В 2002 году Рик Оуэнс получил престижную награду Perry Ellis Emerging Talent Award, а затем возглавил модный дом
+                    Revillon. Вскоре он переехал в Париж, где основал собственный дом моды и расширил бренд Owenscorp, запустив
+                    линии обуви и меховой одежды. Показы дизайнера, поддержанные Anna Wintour и Vogue America, получили признание за
+                    авангардные решения и монохромную палитру. Успех его культовых кроссовок и сапог на массивной подошве привел к
+                    заключению долгосрочного контракта о сотрудничестве с концерном adidas.
+                </p>
+            </div>
+
+            <div class="style-section">
+                <div class="section-header">
+                    <h2 class="collections-heading">Особенности стиля</h2>
+                    <div class="underline"></div>
+                </div>
+                <p class="style-text">
+                    Стиль Рика Оуэнса часто характеризуют как «гламур в стиле гранж». Модельер создает кожаные куртки в темных тонах,
+                    одежду сложного асимметричного кроя и необычную обувь, дизайн которой многие называют «сумасшедшим». Его
+                    творения внешне не имеют ничего общего с богатством и вычурностью. Дизайнер намеренно придает им слегка
+                    изношенный потертый вид. Тем не менее, в качестве отделки для своих моделей Рик использует дорогостоящие
+                    материалы — например, соболиный мех. В целом, одежда дизайнера отличается практичностью, смелостью и высокой
+                    стоимостью.
+                </p>
+                
+                <div class="style-images">
+                    <div class="style-image-container">
+                        <img src="/web/img/model10.png" alt="Модель 1 в коллекции Рика Оуэнса" class="style-image" />
+                    </div>
+                    <div class="style-image-container">
+                        <img src="/web/img/model20.png" alt="Модель 2 в коллекции Рика Оуэнса" class="style-image" />
+                    </div>
+                </div>
+            </div>
+            <a href="/collections.html" class="collections-link">
+                <button class="collections-button" aria-label="Зарегистрироваться">Коллекции</button>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">© 2025 HOLY FIND. Все права защищены.</p>
+            <div class="footer-line"></div>
+            <a href="mailto:supportholyfind.mail.ru" class="footer-email">supportholyfind.mail.ru</a>
+        </div>
+    </footer>
+</body>
+</html>

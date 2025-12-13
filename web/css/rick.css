@@ -1,0 +1,367 @@
+.designer-page {
+    max-width: calc(100vw - 200px);
+    margin: 0 100px;
+    padding: 40px 0;
+}
+
+.designer-hero {
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+    align-items: start;
+}
+
+.designer-card-container {
+    position: relative;
+    margin-top: 0;
+}
+
+.designer-card {
+    width: 440px;
+    height: 587px;
+    background: #FFFFFF;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.designer-image {
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    position: relative;
+    background: #f8f8f8;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 0;
+}
+
+.designer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.designer-info {
+    width: 100%;
+    height: 35%;
+    background: #FFFFFF;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid #f0f0f0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.designer-text {
+    width: 100%;
+    text-align: center;
+}
+
+.designer-name-ru {
+    font-family: 'crimsonpro';
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.designer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.3;
+    margin: 15px 0;
+}
+
+.designer-name-en {
+    font-family: 'crimsonpro';
+    font-size: 36px;
+    color: #504c4cc0;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.designer-bio {
+    padding-top: 20px;
+}
+
+.designer-heading {
+    font-family: 'delagothicone';
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.bio-text {
+    font-family: 'crimsonpro';
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #000;
+    margin-top: 30px;
+}
+
+.underline {
+    width: 100%;
+    max-width: 300px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.3;
+    margin: 0 0 30px 0;
+}
+
+.career-section,
+.style-section {
+    margin-bottom: 60px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.collections-heading {
+    font-family: 'delagothicone';
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.career-text,
+.style-text {
+    font-family: 'crimsonpro';
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #000;
+}
+
+.kate-moss-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.kate-image-container {
+    display: inline-block;
+    margin: 0 auto 20px;
+}
+
+.kate-image {
+    width: 900px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.image-caption {
+    font-family: 'crimsonpro';
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.style-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.style-image-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.style-image {
+    width: 650px;
+    height: 950px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.collections-link {
+    display: inline-block;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.collections-button {
+    width: 300px;
+    height: 70px;
+    padding: 12px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'delagothicone';
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.collections-button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .designer-page {
+        max-width: calc(100vw - 100px);
+        margin: 0 50px;
+    }
+    
+    .designer-hero {
+        gap: 40px;
+    }
+    
+    .designer-card {
+        width: 380px;
+        height: 507px;
+    }
+    
+    .bio-text {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .designer-hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .designer-card-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .designer-card {
+        width: 440px;
+        height: 587px;
+    }
+    
+    .bio-text {
+        font-size: 28px;
+    }
+    
+    .career-text,
+    .style-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .designer-page {
+        max-width: calc(100vw - 40px);
+        margin: 0 20px;
+        padding: 30px 0;
+    }
+    
+    .designer-card {
+        width: 100%;
+        max-width: 440px;
+        height: auto;
+        aspect-ratio: 440/587;
+    }
+    
+    .designer-image {
+        height: 65%;
+    }
+    
+    .designer-info {
+        height: 35%;
+        padding: 20px;
+    }
+    
+    .designer-name-ru {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .designer-name-en {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    
+    .bio-text {
+        font-size: 24px;
+    }
+    
+    .career-text,
+    .style-text {
+        font-size: 18px;
+    }
+    
+    .style-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .style-image-container {
+        width: 100%;
+    }
+    
+    .kate-image {
+        width: 220px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio-text {
+        font-size: 20px;
+    }
+    
+    .career-text,
+    .style-text {
+        font-size: 16px;
+    }
+    
+    .designer-name-ru {
+        font-size: 24px;
+    }
+    
+    .designer-name-en {
+        font-size: 18px;
+    }
+    
+    .designer-heading,
+    .collections-heading {
+        font-size: 28px;
+    }
+    
+    .kate-image {
+        width: 196px;
+        height: 294px;
+    }
+}

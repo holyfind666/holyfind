@@ -1,0 +1,624 @@
+
+
+.edit-profile-page {
+    min-height: calc(100vh - 150px);
+    padding: 40px 20px;
+    background-image: url('/web/img/pon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Основная карточка редактирования и попапы */
+.edit-profile-card,
+.edit-popup-card {
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto;
+    background: rgba(3, 3, 3, 0.598);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    position: relative;
+}
+
+/* Кнопка закрытия */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+}
+
+.close-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+.close-button img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+.edit-profile-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Секция аватарки с кнопкой */
+.avatar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.avatar-container {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.edit-profile-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-button {
+    padding: 12px 30px;
+    background-color: #ffffff2e;
+    color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'delagothicone', sans-serif;
+    text-transform: uppercase;
+    min-width: 200px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.avatar-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Секция информации (почта и пароль) */
+.profile-info-section {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-item {
+    width: 100%;
+}
+
+.info-label {
+    display: block;
+    font-family: 'delagothicone', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-value {
+    font-family: 'crimsonpro';
+    font-size: 20px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin: 0;
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-value {
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+/* Кнопка изменить пароль */
+.password-button-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.password-button {
+    padding: 14px 40px;
+    background-color: #ffffff2e;
+    color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'delagothicone', sans-serif;
+    text-transform: uppercase;
+    min-width: 250px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.password-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Попапы */
+.edit-popup-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.popup-title {
+    font-family: 'delagothicone', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+/* Попап аватарки */
+.avatar-preview-container {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-upload-section {
+    text-align: center;
+}
+
+.upload-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffffff2e;
+    color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'delagothicone', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.upload-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.upload-hint {
+    font-family: 'crimsonpro';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Попап пароля */
+.password-form {
+    width: 100%;
+    max-width: 350px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-family: 'crimsonpro';
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'crimsonpro';
+    font-size: 16px;
+}
+
+/* Кнопки попапов */
+.popup-buttons {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.popup-button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'delagothicone', sans-serif;
+    text-transform: uppercase;
+    min-width: 150px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.save-button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.save-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.cancel-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Добавьте эти стили в конец edit-profile.css */
+
+/* Стили для кнопок */
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Стили для сообщений об ошибках */
+.error-message {
+    color: #ff6b6b !important;
+    font-size: 14px !important;
+    margin-top: 5px !important;
+    font-family: 'crimsonpro', serif !important;
+    min-height: 20px;
+}
+
+/* Стили для инпутов с ошибками/успехом */
+.form-input.error {
+    border-color: #ff6b6b !important;
+    box-shadow: 0 0 0 1px rgba(255, 107, 107, 0.2) !important;
+}
+
+.form-input.success {
+    border-color: #4CAF50 !important;
+    box-shadow: 0 0 0 1px rgba(76, 175, 80, 0.2) !important;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Стили для скрытого input файла */
+.hidden-file-input {
+    display: none;
+}
+
+/* Анимации для сообщений */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Стили для кнопок внутри попапов */
+.popup-buttons button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'delagothicone', sans-serif;
+    text-transform: uppercase;
+    min-width: 150px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.save-button {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.save-button:hover:not(:disabled) {
+    background-color: #f0f0f0 !important;
+    transform: translateY(-2px);
+}
+
+.cancel-button {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Кнопки на основной карточке */
+.avatar-button, .password-button {
+    background-color: #ffffff2e !important;
+    color: #ffffff !important;
+    border: 2px solid #000 !important;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'delagothicone', sans-serif;
+    text-transform: uppercase;
+    min-width: 200px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.avatar-button:hover, .password-button:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-2px);
+}
+
+/* Адаптивность для кнопок */
+@media (max-width: 720px) {
+    .popup-buttons button {
+        padding: 10px 20px;
+        font-size: 14px;
+        min-width: 120px;
+    }
+    
+    .avatar-button, .password-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        min-width: 160px;
+    }
+}
+
+/* Планшеты (1024px и меньше) */
+@media (max-width: 1024px) {
+    .edit-profile-page {
+        padding: 30px 15px;
+    }
+    
+    .edit-profile-card,
+    .edit-popup-card {
+        max-width: 550px;
+        padding: 30px;
+        margin: 30px auto;
+    }
+    
+    .info-value {
+        font-size: 18px;
+    }
+    
+    .avatar-button,
+    .password-button {
+        padding: 10px 25px;
+        font-size: 14px;
+        min-width: 180px;
+    }
+}
+
+/* Планшеты (720px и меньше) */
+@media (max-width: 720px) {
+    .edit-profile-page {
+        padding: 20px 10px;
+    }
+    
+    .edit-profile-card,
+    .edit-popup-card {
+        max-width: 90%;
+        padding: 25px 20px;
+        margin: 25px auto;
+    }
+    
+    .edit-profile-card__content {
+        gap: 30px;
+    }
+    
+    .avatar-container {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .info-label {
+        font-size: 16px;
+    }
+    
+    .info-value {
+        font-size: 16px;
+        padding: 12px 16px;
+        min-height: 45px;
+    }
+    
+    .password-value {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
+    .avatar-button,
+    .password-button {
+        padding: 10px 20px;
+        font-size: 13px;
+        min-width: 160px;
+    }
+    
+    .popup-title {
+        font-size: 20px;
+    }
+    
+    .popup-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .popup-button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Мобильные устройства (375px и меньше) */
+@media (max-width: 375px) {
+    .edit-profile-card,
+    .edit-popup-card {
+        max-width: 95%;
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+    
+    .close-button {
+        top: 10px;
+        right: 10px;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .close-button img {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .avatar-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .info-label {
+        font-size: 14px;
+    }
+    
+    .info-value {
+        font-size: 14px;
+        padding: 10px 12px;
+        min-height: 40px;
+    }
+    
+    .password-value {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .avatar-button,
+    .password-button {
+        padding: 8px 16px;
+        font-size: 12px;
+        min-width: 140px;
+    }
+    
+    .popup-title {
+        font-size: 18px;
+    }
+    
+    .avatar-preview {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .upload-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .form-input {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}

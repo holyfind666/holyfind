@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Профиль - HOLY FIND</title>
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link rel="stylesheet" href="web/css/profile.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="menu" aria-label="Основная навигация">
+            <a href="index.html" class="logo">
+                <div class="logo-h"><img src="web/img/logo.png" alt="H" /></div>
+                <p class="logo-text">oly find</p>
+            </a>
+
+            <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+
+            <div class="burger-toggle-container">
+                <label for="burger-toggle" class="burger-icon" aria-label="Открыть меню">
+                    <img src="web/img/photoburger.png" alt="Меню" class="burger-icon-img">
+                </label>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="index.html" class="glav">Главная</a></li>
+                <li><a href="collections.html" class="glav">Коллекции</a></li>
+                <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+                <li><a href="about.html" class="glav">О нас</a></li>
+            </ul>
+
+            <div class="profile-auth-container">
+                <a href="/profile.html" class="profile-link">
+                    <img src="web/img/avatar.png" alt="Аватар пользователя" width="50" height="50">
+                </a>
+                <a href="/index.html" class="logout-link">
+                    <button class="logout-button" aria-label="Выйти из аккаунта">ВЫЙТИ</button>
+                </a>
+            </div>
+
+            <div class="mobile-menu">
+                <!-- <label for="burger-toggle" class="menu-close-btn" aria-label="Закрыть меню">
+                    <img src="web/img/photoburger.png" alt="Закрыть" class="menu-close-img">
+                </label> -->
+
+                <ul class="mobile-menu-list">
+                    <li><a href="index.html" class="glav">Главная</a></li>
+                    <li><a href="collections.html" class="glav">Коллекции</a></li>
+                    <li><a href="designers.html" class="glav">Дизайнеры</a></li>
+                    <li><a href="about.html" class="glav">О нас</a></li>
+                </ul>
+
+                <div class="profile-auth-container-mobile">
+                    <a href="/profile.html" class="profile-link-mobile">
+                        <img src="web/img/avatar.png" alt="Аватар пользователя" class="profile-avatar-mobile">
+                    </a>
+                    <a href="/index.html" class="logout-link-mobile">
+                        <button class="logout-button-mobile">ВЫЙТИ</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="profile-page">
+        <!-- Полупрозрачное серое окошко с информацией профиля -->
+        <div class="profile-info-card">
+            <div class="profile-info-card__content">
+                <div class="profile-info-card__header">
+                    <img src="web/img/avatar.png" alt="Аватар пользователя" class="profile-info-card__avatar">
+                    <div class="profile-info-card__user-info">
+                        <h1 class="profile-info-card__title">Ваше пространство, Кирилл</h1>
+                        <p class="profile-info-card__email">supportholyfind.mail.ru</p>
+                    </div>
+                </div>
+                <div class="profile-info-card__actions">
+                    <a href="edit-profile.html" class="profile-info-card__edit-link">
+                        <button class="profile-info-card__edit-button">Редактировать</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Секция с избранными коллекциями -->
+        <section class="collections-page" aria-labelledby="favorites-heading">
+            <div class="section-header">
+                <h2 id="favorites-heading" class="collections-heading">Избранные коллекции</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="collections-grid-page">
+                <article class="collection-card" data-category="all popular">
+                    <div class="card-image">
+                        <img src="web/img/col1.jpg"
+                            alt="Деструктивный силуэт - асимметричное черное платье с драпировкой" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3>ДЕСТРУКТИВНЫЙ СИЛУЭТ</h3>
+                            <p>Коллекция "Разрушение форм", 2023</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="burger-menu" aria-label="Открыть меню коллекции">
+                                <img src="/web/img/burger.svg" alt="burger" class="burger">
+                            </button>
+                            <div class="heart-filled">
+                                <img src="/web/img/hert2.png" alt="В избранном">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="collection-card" data-category="all popular">
+                    <div class="card-image">
+                        <img src="web/img/col2.jpg" alt="Архитектурный крой - белое платье с геометрическими формами" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3>АРХИТЕКТУРНЫЙ КРОЙ</h3>
+                            <p>Экспериментальные формы, 2023</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="burger-menu" aria-label="Открыть меню коллекции">
+                                <img src="/web/img/burger.svg" alt="burger" class="burger">
+                            </button>
+                            <div class="heart-filled">
+                                <img src="/web/img/hert2.png" alt="В избранном">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="collection-card" data-category="all favorite">
+                    <div class="card-image">
+                        <img src="web/img/col3.jpg" alt="Монохромная коллекция - контрастное черно-белое платье" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3>МОНОХРОМНАЯ КОЛЛЕКЦИЯ</h3>
+                            <p>Коллекция "Черное и белое", 2023</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="burger-menu" aria-label="Открыть меню коллекции">
+                                <img src="/web/img/burger.svg" alt="burger" class="burger">
+                            </button>
+                            <div class="heart-filled">
+                                <img src="/web/img/hert2.png" alt="В избранном">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="collection-card" data-category="all popular">
+                    <div class="card-image">
+                        <img src="web/img/col1.jpg" alt="Авангардные формы - экспериментальный дизайн" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3>АВАНГАРДНЫЕ ФОРМЫ</h3>
+                            <p>Экспериментальный дизайн, 2023</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="burger-menu" aria-label="Открыть меню коллекции">
+                                <img src="/web/img/burger.svg" alt="burger" class="burger">
+                            </button>
+                            <div class="heart-filled">
+                                <img src="/web/img/hert2.png" alt="В избранном">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="collection-card" data-category="all favorite">
+                    <div class="card-image">
+                        <img src="web/img/col2.jpg" alt="Концептуальный минимализм - чистые линии" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3>КОНЦЕПТУАЛЬНЫЙ КРОЙ</h3>
+                            <p>Чистые линии, 2023</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="burger-menu" aria-label="Открыть меню коллекции">
+                                <img src="/web/img/burger.svg" alt="burger" class="burger">
+                            </button>
+                            <div class="heart-filled">
+                                <img src="/web/img/hert2.png" alt="В избранном">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="collection-card" data-category="all popular favorite">
+                    <div class="card-image">
+                        <img src="web/img/col3.jpg" alt="Футуристические силуэты - коллекция будущего" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3>ФУТУРИСТИЧЕСКИЕ СИЛУЭТЫ</h3>
+                            <p>Коллекция будущего, 2023</p>
+                        </div>
+                        <div class="card-actions">
+                            <button class="burger-menu" aria-label="Открыть меню коллекции">
+                                <img src="/web/img/burger.svg" alt="burger" class="burger">
+                            </button>
+                            <div class="heart-filled">
+                                <img src="/web/img/hert2.png" alt="В избранном">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">© 2025 HOLY FIND. Все права защищены.</p>
+            <div class="footer-line"></div>
+            <a href="mailto:supportholyfind.mail.ru" class="footer-email">supportholyfind.mail.ru</a>
+        </div>
+    </footer>
+    <script src="web/js/profile-check.js" defer></script>
+</body>
+
+</html>
