@@ -34,7 +34,7 @@
 }
 
 body {
-    background-image: url('/web/img/pon.jpg');
+    background-image: url('../img/pon.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
