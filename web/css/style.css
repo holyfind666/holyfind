@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'delagothicone';
-    src: url("/web/fonts/DelaGothicOne-Regular.ttf");
+    src: url("../fonts/DelaGothicOne-Regular.ttf");
 }
 
 * {
