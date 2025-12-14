@@ -272,7 +272,7 @@
     display: block;
     width: 28px;
     height: 28px;
-    background-image: url('web/img/hert.png');
+    background-image: url('../img/hert.png');
     background-size: cover;
     background-position: center;
     border-radius: 6px;
@@ -280,7 +280,7 @@
 }
 
 .photo-checkbox:checked + .photo-visual {
-    background-image: url('web/img/hert2.png');
+    background-image: url('../img/hert2.png');
     transform: scale(1.02);
 }
 
