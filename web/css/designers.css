@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
 }
+
 .section-header{
     grid-column: 1/-1;
     text-align: center;
@@ -113,6 +114,16 @@
 
 .designers-card:hover .card-image img {
     transform: scale(1.05);
+}
+@media (min-width: 1920px) {
+    .designers-grid-page {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+    .designers-card{
+        max-width: 600px;
+        height: 500px;
+    }
 }
 @media (max-width: 1200px) {
     .designers-page {

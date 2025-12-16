@@ -253,3 +253,13 @@
     background-image: url('../img/hert2.png');
     transform: scale(1.02);
 }
+@media (min-width: 1920px) {
+    .collections-grid-page{
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    .collection-card{
+        max-width: 600px;
+        height: 500px;
+    }
+}

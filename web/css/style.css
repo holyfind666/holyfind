@@ -415,6 +415,12 @@ footer {
     .login-link {
         display: none;
     }
+    .copyright{
+        font-size: 20px;
+    }
+    .footer-email{
+        font-size: 20px;
+    }
 }
 
 /* Список меню */
@@ -558,6 +564,12 @@ body::after {
     .mobile-menu-list {
         gap: 20px;
         max-width: 250px;
+    }
+        .copyright{
+        font-size: 18px;
+    }
+    .footer-email{
+        font-size: 18px;
     }
 }
 

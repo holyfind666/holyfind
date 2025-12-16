@@ -187,13 +187,11 @@
     </footer>
 
     <script>
-        // Минимальный скрипт для управления видимостью карточек
         document.addEventListener('DOMContentLoaded', function() {
             // Получаем параметры из URL
             const urlParams = new URLSearchParams(window.location.search);
             const popupType = urlParams.get('popup');
-            
-            // Показываем нужную карточку в зависимости от параметра
+    
             const avatarPopup = document.getElementById('avatarPopup');
             const passwordPopup = document.getElementById('passwordPopup');
             const mainCard = document.getElementById('mainCard');
@@ -207,7 +205,7 @@
                 passwordPopup.style.display = 'block';
                 mainCard.style.display = 'none';
             } else {
-                // Если нет параметров, показываем основную карточку
+
                 avatarPopup.style.display = 'none';
                 passwordPopup.style.display = 'none';
                 mainCard.style.display = 'block';

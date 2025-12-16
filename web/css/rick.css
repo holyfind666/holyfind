@@ -280,7 +280,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     .designer-page {
         max-width: calc(100vw - 40px);
         margin: 0 20px;
@@ -329,15 +329,16 @@
     
     .style-image-container {
         width: 100%;
+        
     }
     
     .kate-image {
-        width: 220px;
-        height: 330px;
+        width: 600px;
+        height: 350px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
     .bio-text {
         font-size: 20px;
     }
@@ -361,7 +362,14 @@
     }
     
     .kate-image {
-        width: 196px;
-        height: 294px;
+        width: 250px;
+        height: 200px;
+    }
+    .style-image-container{
+        width: 100px;
+    }
+    .style-image{
+        width: 300px;
+        height: 450px
     }
 }
