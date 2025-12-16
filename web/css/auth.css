@@ -72,7 +72,6 @@
     height: 54px;
     font-size: 16px;
     border: 2px solid #868585;
-    border-radius: 3px;
     padding: 0 15px;
     font-family: 'crimsonpro', serif;
 }
@@ -114,14 +113,14 @@
 .login-link-text {
     font-family: "crimsonpro";
     color: #524f4f;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 
 .login-link a {
     font-family: "crimsonpro";
     color: #524f4f;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -133,7 +132,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 10px;
     padding: 12px 0;
 
@@ -207,7 +206,6 @@
     width: 100%;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
 .success-card h1 {
