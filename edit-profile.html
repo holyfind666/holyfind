@@ -64,7 +64,6 @@
 </header>
 
     <main class="edit-profile-page">
-        <!-- для изменения аватарки -->
         <div class="edit-popup-card" id="avatarPopup" style="display: none;">
             <a href="#" class="close-button" aria-label="Закрыть">
                 <img src="web/img/close.png" alt="Закрыть">
@@ -135,19 +134,16 @@
             </div>
         </div>
 
-        <!-- Основная карточка редактирования -->
         <div class="edit-profile-card" id="mainCard" style="display: none;">
             <a href="profile.html" class="close-button" aria-label="Закрыть">
                 <img src="web/img/close.png" alt="Закрыть">
             </a>
             
             <div class="edit-profile-card__content">
-                <!-- Аватар -->
                 <div class="avatar-section">
                     <div class="avatar-container">
                         <img src="web/img/avatar.png" alt="Аватар пользователя" class="edit-profile-avatar" id="mainAvatar">
                     </div>
-                    <!-- Кнопка под аватаркой -->
                     <div class="avatar-button-container">
                         <button class="avatar-button" id="changeAvatarBtn">
                             Добавить фото
@@ -155,7 +151,6 @@
                     </div>
                 </div>
                 
-                <!-- Почта и пароль -->
                 <div class="profile-info-section">
                     <div class="info-item">
                         <label class="info-label">Почта</label>
@@ -168,7 +163,6 @@
                     </div>
                 </div>
                 
-                <!-- Кнопка изменить пароль -->
                 <div class="password-button-container">
                     <button class="password-button" id="changePasswordBtn">
                         Изменить пароль
@@ -188,7 +182,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Получаем параметры из URL
             const urlParams = new URLSearchParams(window.location.search);
             const popupType = urlParams.get('popup');
     
@@ -213,7 +206,6 @@
         });
     </script>
     
-    <!-- Подключаем основной скрипт для редактирования профиля -->
     <script src="web/js/edit-profile.js" defer></script>
 </body>
 </html>

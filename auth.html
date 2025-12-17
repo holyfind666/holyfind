@@ -17,17 +17,17 @@
                 <p class="logo-text">oly find</p>
             </a>
 
-            <!-- Чекбокс для управления меню -->
+
             <input type="checkbox" id="burger-toggle" class="burger-checkbox">
             
-            <!-- Иконка бургера справа -->
+
             <div class="burger-toggle-container">
                 <label for="burger-toggle" class="burger-icon" aria-label="Открыть меню">
                     <img src="web/img/photoburger.png" alt="Меню" class="burger-icon-img">
                 </label>
             </div>
 
-            <!-- Основное меню для десктопа -->
+
             <ul class="nav-list">
                 <li><a href="index.html" class="glav">Главная</a></li>
                 <li><a href="collections.html" class="glav">Коллекции</a></li>
@@ -35,7 +35,7 @@
                 <li><a href="about.html" class="glav">О нас</a></li>
             </ul>
 
-            <!-- Контейнер для профиля и кнопки выхода (десктоп) -->
+
             <div class="profile-auth-container">
                 <a href="profile.html" class="profile-link">
                     <img src="web/img/avatar.png" alt="Аватар пользователя" width="50" height="50">
@@ -45,10 +45,8 @@
                 </a>
             </div>
 
-            <!-- Мобильное меню -->
             <div class="mobile-menu">
-                <!-- Оверлей для закрытия -->
-                <!-- <label for="burger-toggle" class="mobile-menu-overlay"></label> -->
+
                 
                 <ul class="mobile-menu-list">
                     <li><a href="index.html" class="glav" onclick="closeMobileMenu()">Главная</a></li>
@@ -57,7 +55,6 @@
                     <li><a href="about.html" class="glav" onclick="closeMobileMenu()">О нас</a></li>
                 </ul>
                 
-                <!-- Профиль в мобильном меню -->
                 <div class="profile-auth-container">
                     <a href="profile.html" class="profile-link" onclick="closeMobileMenu()">
                         <img src="web/img/avatar.png" alt="Аватар пользователя">
@@ -178,12 +175,12 @@
     </footer>
 
     <script>
-        // Функция для закрытия мобильного меню
+
         function closeMobileMenu() {
             document.getElementById('burger-toggle').checked = false;
         }
         
-        // Закрытие меню при клике на оверлей
+
         document.querySelectorAll('.mobile-menu-overlay').forEach(overlay => {
             overlay.addEventListener('click', closeMobileMenu);
         });
